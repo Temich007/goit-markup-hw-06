@@ -20,7 +20,7 @@
     <header class="header">
         <div class="container header-container">
             <nav class="navigation">
-                <a href="./index.html" class="logo-text-header link"><span class="logo-blue">Web</span>Studio<span></a>
+                <a class="logo-blue" href="./index.html"><span>Web</span>Studio</a>
             
                 <ul class="menu list">
                     <li class="menu-item">
@@ -60,7 +60,7 @@
         <!-- HERO -->
         <section class="hero-center">
             <div class="container">
-                <h1 class="hero-center-title">Эффективные решения</br> для вашего бизнеса</h1>
+                <h1 class="hero-center-title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="hero-center-modal-bth" type="button" data-modal-open>Заказать услугу</button>
             </div>
               
@@ -311,7 +311,7 @@
             </div>
            
         </section>
-<!================================= Clients ============================>
+<!-- ========================= Clients========================== -->
         <section class="clients section">
             <div class="container">
                 <h2 class="title-clients">Постоянные клиенты</h2>
@@ -361,8 +361,7 @@
                 </ul>
             </div>
         </section>
-
-<!=================================== end clients ===================== >
+<!-- ====================================end clients=========================================  -->
     </main>
 
     <!-- ================footer================== -->
@@ -423,7 +422,7 @@
                     <div class="form-footer">
                         <p class="footer-form-title">Подпишитесь на рассылку</p>
                         <form class="footer-form-sabmit">
-                            <input class="footer-form-input" type="e-mail" id="input-e-mail" name="e-mail" placeholder="E-mail">
+                            <input class="footer-form-input" type="email" placeholder="E-mail">
                             <button class="footer-form-bth footer-form-sabmit  " type="submit">
                                 Подписаться
                                 <svg class="footer-telegram-icon">
@@ -431,19 +430,15 @@
                                 </svg>
                             </button>
                         </form>
-                    </div> 
-                      
-                        
-                
+                    </div>    
         </div>    
         
-
-        </form>
     </footer>
 <!-- ================ end footer================== -->
+<!-- ===================Modal=========================== -->
 
 
-<div class="backdrop is-hidden " data-modal>
+<div class="backdrop is-hidden  " data-modal>
     <div class="modal">
         <button type="button" class="modal-close-bth" data-modal-close>
             <svg class="modal-close-bth-icon">
@@ -482,9 +477,9 @@
             </label>
             <label class="modal-form-field">
                 Коментарии
-                <textarea name="user-message" class="modal-form-message"placeholder="Введите текст"></textarea>
+                <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
             </label>
-                <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required placeholder="введите текст">
+                <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required >
                 <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю 
                     <a class="modal-form-policy-link" href="">Условия договора</a>
             </label>

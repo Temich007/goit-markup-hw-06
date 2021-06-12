@@ -172,7 +172,7 @@ display: flex;
 .current-link::after{
   position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -2px;
     content: '';
     display: block;
     width: 100%;
@@ -182,17 +182,22 @@ display: flex;
     border-radius: 2px;
 }
 
+
 .logo-blue{
-  color: var(--accent-color);
+ display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    color: var(--title-text-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
-.logo-text-header{
- color: var(--primary-text-color); 
-font-family:  "Raleway", sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
- outline: none;
+span{
+  color: var(--accent-color);
 }
 
 .menu-link
@@ -874,12 +879,20 @@ color: var(--primary-text-color);
   padding: 0;
 } 
 
+.modal-close-bth:hover .modal-close-bth-icon,
+.modal-close-bth:focus .modal-close-bth-icon{
+fill: var(--accent-color);
+}
+
+
+
 
 .modal-close-bth-icon{
   width: 18px;
   height: 18px;
    fill: var(--primary-text-color);
 }
+
 
 .modal-form-head{
 font-weight: 700;
@@ -907,7 +920,7 @@ margin-bottom: 12px;
 line-height: 1.16px;
 letter-spacing: 0.01em;
 color: var(--primary-secondary-color);
-margin-bottom: 10px;
+margin-bottom: 20px;
 }
 
 .modal-form-input{
@@ -948,7 +961,6 @@ margin-bottom: 10px;
    resize: none;
    padding: 12px 16px;
     margin-top: 4px;
-    margin-bottom: 20px;
 }
 .modal-form-message::placeholder{
   color: rgba(117, 117, 117, 0.5);
@@ -976,6 +988,11 @@ margin-bottom: 10px;
   letter-spacing: 0.03em;
   color: var(--primary-secondary-color);
  }
+ .modal-form-policy-link:hover,
+ .modal-form-policy-link:focus{
+   color: var(--accent-color);
+   outline: ;
+ }
 
  .modal-form-checkbox:checked + .modal-form-checkbox-policy::before{
    border-color: var(--secondary-blue-color);
@@ -985,14 +1002,12 @@ margin-bottom: 10px;
    border-radius: 2px;
  }
  .modal-form-checkbox:focus + .modal-form-checkbox-policy::before{
-   display: block;
    border-color: var(--accent-color); 
   border-radius: 2px;
   outline: none;
  }
  .modal-form-policy-link{
   color: var(--accent-color);
-  outline: none;
  }
 
  .bth-modal{
@@ -1014,11 +1029,16 @@ margin-bottom: 10px;
   border-radius: 4px;
   border: none;
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-white-color);
   padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
+ .modal-form-btn:hover,
+ .modal-form-btn:focus{
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   background-color: var(--accent-color);
+ }
 
 
 
